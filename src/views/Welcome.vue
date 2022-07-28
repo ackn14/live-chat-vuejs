@@ -2,14 +2,14 @@
   <div class="container welcome">
     <p>ようこそ！</p>
     <div v-if="shouldShowLoginForm">
-      <LoginForm @redirectToChatRoom="redirectToChatRoom" 　 />
+      <LoginForm @redirectToChatRoom="redirectToChatRoom" />
       <p class="change-form">
         初めての方は<span @click="shouldShowLoginForm = false">こちら</span
         >をクリック
       </p>
     </div>
     <div v-if="!shouldShowLoginForm">
-      <SignupForm @redirectToChatRoom="redirectToChatRoom" 　 />
+      <SignupForm @redirectToChatRoom="redirectToChatRoom" />
       <p class="change-form">
         アカウントをお持ちの方は<span @click="shouldShowLoginForm = true"
           >こちら</span
